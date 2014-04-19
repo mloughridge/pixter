@@ -1,0 +1,15 @@
+<div class="private-square span4 offset2 text-center">
+  
+  <h1>Upload your Image</h1>
+  
+<%= simple_form_for @post do |f| %>
+  <%= f.input :title, label: 'What is this image about?', placeholder: 'fruit, vegetable' %>
+  <br/>
+  <%= f.input :description, label: 'Why do you like it?', placeholder: 'It is very tasty; I like fruits' %>
+   <br/>
+  <%= f.button :submit, :class => 'btn btn-warning' %>
+  
+  
+  <% end %>
+  
+</div>
